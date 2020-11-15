@@ -1,0 +1,29 @@
+.contactG{
+
+    &__Title h1{
+       font-size: 2.5rem;
+       color: black;
+       padding-bottom: .5rem;
+    }
+}
+.form-group .nbabtn{
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+   padding: .5rem 1.1rem;
+   outline: none;
+   border: .1rem solid black ;
+   border-radius: .3rem;
+}
+.form-group label{
+    font-size: 1.1rem;
+}
+.form-group input[type="text"], textarea ,input[type="email"]{
+    outline: none;
+    box-shadow:none !important;
+   //border: 1px solid #ccc;
+    }
+    .form-group .form-control:focus{
+        border: 2px solid black;
+
+    }
+ 

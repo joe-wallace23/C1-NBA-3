@@ -1,0 +1,33 @@
+.final{
+    margin-top: 5rem;
+
+    @include respond(tab-port){
+        margin-top: -5rem;
+    }
+
+  
+
+    &__images{
+        background-image: url(/images/nba-playoffs-bracket.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 48rem;
+
+
+        @include respond(tab-port){
+            background-image: url(/images/nba-playoffs-bracket.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 46rem;
+        }
+        @include respond(tab-land){
+            background-image: url(/images/nba-playoffs-bracket.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 46rem;
+        }
+    }
+}

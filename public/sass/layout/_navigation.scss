@@ -1,0 +1,122 @@
+.navbar{
+    background-color:$nav-color;
+     
+    &-nav{  
+
+      
+      
+    }
+    &__icon{
+        height: 1.5rem;
+        width: 4rem;
+        fill: white;
+        margin-top: .5rem;
+    }
+}
+
+.nav-item{
+         
+}
+.nav-cost{
+   color:$coloc-white;
+   font-size: 1rem !important;
+   text-decoration: none;
+   text-transform: capitalize;
+   &:hover::after{
+       content: '';
+       display: block;
+       height: 2px;
+       background-color:$coloc-white;
+      
+      
+   }
+
+}
+.nav-link{
+    color:$coloc-white;
+    font-size: 1rem !important;
+    text-transform: capitalize;
+    text-decoration: none !important;
+
+ 
+}
+
+.dropdown:hover>.dropdown-menu{
+display: block;
+}
+.dropdown{
+  
+     &-menu{
+         background-color: #0b1a36;
+     }
+     &-item{
+         color: lightgray;
+     }
+     &-item:hover{
+        background-color: transparent;
+        color: $coloc-white;
+    }
+    &-store {
+        padding: 2rem;
+    }
+    &-store img{
+        width: 100px;
+    }
+    &-newDivider{
+        content: '';
+        height: 1px;
+
+        width: 7rem;
+        display: block;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        background-color: white;
+    }
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+.toggler-btn{
+    border: 2px solid white;
+    padding: 5px;
+    transition: all 2s ease;
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: white;
+    transition: all 0.5s ease;
+}
+.change .bar1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    transform: rotate(45deg) translate(-5px, -8px);
+}
+
+.arrow-up{
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #0b1a36 ;
+    left: 10px;
+    top: -15px;
+
+    @include respond(tab-port){
+    position: absolute;
+    top: 2rem;
+    }
+    @include respond(tab-land){
+        position: absolute;
+        top: 2rem;
+        }
+}
+
+

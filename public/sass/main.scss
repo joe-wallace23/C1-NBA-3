@@ -1,0 +1,32 @@
+// @import "/sass/abstracts/functions";
+ @import "abstracts/mixins";
+ @import "abstracts/variables";
+
+
+//@import "/sass/base/animations";
+@import "base/base";
+@import "base/typgraphy";
+//@import "/sass/base/utilities";
+
+
+@import "commponents/carousel";
+@import "commponents/series";
+@import "commponents/features";
+@import "commponents/follow";
+@import "commponents/banner";
+@import "commponents/finals";
+@import "commponents/whole";
+@import "commponents/artical";
+@import "commponents/score";
+@import "commponents/contact";
+@import "commponents/thanks";
+
+@import "layout/footer";
+//@import "/sass/layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+
+
+
+
+@import "pages/home";

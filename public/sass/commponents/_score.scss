@@ -1,0 +1,68 @@
+.score{
+   
+
+    &__date p{
+        font-size: 1.5rem;
+        color: black;
+    }
+    
+    &__game p{
+       display: inline-block;
+       color: black;
+       font-size: 1rem;
+
+       @include respond(phone){
+           font-size: .8rem;
+       }
+    }
+    &__round{
+        float:right;
+        color:gray;
+    }
+   &__background{
+       border: 1px solid black;
+       padding: .5rem .5rem;
+       border-radius: .5rem;
+   }
+    &__images li{
+        display: inline-block;
+    }
+    &__images img{
+        width: 3rem;
+    }
+    &__images p{
+        margin-left: .5rem;
+        font-size: 1rem;
+        color: black;
+    }
+    &__images li.number{
+        float: right;
+    }
+    &__images span{
+        font-size: 1.5rem;
+        color: black;
+    }
+    &__images span.lost{
+        font-size: 1.5rem;
+        color: lightgray;
+    }
+    &__finalT p {
+      display: inline-block;
+    }
+    &__finalT p.fi {
+        font-size: 1rem;
+      }
+      &__finalT p.pass {
+        font-size: 1rem;
+      }
+    &__finalT .pass {
+        float: right;
+      }
+    &__number .lost{
+        float: right;
+    }
+}
+
+.score .col-lg-5{
+    margin-bottom: .5rem;
+}

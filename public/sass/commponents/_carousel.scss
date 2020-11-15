@@ -1,0 +1,98 @@
+.carousel{
+
+    height: 50rem;
+
+    &-item img{
+       
+        height: 30rem;
+        background-size: cover;
+
+
+        @include respond(tab-port){
+            height: 20rem;
+        }
+    } 
+    &-outside h2{
+        font-weight: bold !important;
+        color: black !important;
+        margin: 1rem 0px !important;
+        text-transform: uppercase;
+    }
+    &-outside p{
+       color: black;
+       font-size: 1.2rem;
+       padding-bottom: 1rem;
+       border-bottom: 3px solid black;
+    }
+    &__list {
+
+        a{
+            font-size:  1rem;
+            color: black;
+        }
+          
+
+      
+    }
+    &__icon{
+        fill: black;
+        height: 2rem;
+        width: 1rem;
+        margin-left: 5px;
+    }
+}
+
+.carousel-control-next-icon {
+    background-image: url(/images/png-transparent-black-arrow-computer-icons-caret-next-button-miscellaneous-angle-heart.png);
+    border: 5px solid black;
+    padding: 1.3rem 1.4rem;
+    height: 1rem;
+    border-radius: 5rem;
+    background-color: white;
+}
+.carousel-control-prev-icon {
+    background-image: url(/images/chevron-left-512.png);
+    border: 5px solid black;
+    padding: 1.3rem 1.4rem;
+    border-radius: 5rem;
+    background-color: white;
+  
+}
+
+.carousel-control-prev{
+    position: absolute;
+    top: -15rem;
+
+    @include respond(tab-port){
+        position: absolute;
+        top: -30rem;
+        
+    }
+}
+.carousel-control-next{
+    position: absolute;
+    top: -15rem;
+
+    @include respond(tab-port){
+        position: absolute;
+        top: -30rem;
+        
+    }
+}
+
+.carousel-indicators li{
+    background-color: white !important;
+    position: relative;
+    top: -20rem;
+    height: 1rem;
+   
+
+
+    @include respond(tab-port){
+        background-color: white !important;
+        position: relative;
+        top: -30rem;
+        height: 1rem;
+        
+    }
+}

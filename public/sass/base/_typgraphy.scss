@@ -1,0 +1,31 @@
+// Latest Headline
+.headline{
+    padding-top: 1rem;
+
+    &__title h3{
+        color: black;
+       text-transform: uppercase;
+       font-weight: bold;
+       padding-bottom: 1rem;
+       border-bottom: .3rem solid black;
+    }
+    &__list{
+        list-style: none;
+    }
+    &__bottom {
+        padding: .9rem 0;
+
+        
+    }
+    &__bottom:not(:last-child){
+        border-bottom: 1px solid lightgray;
+    }
+    a{
+        font-size: 1rem;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+
+// End  Latest Headline

@@ -1,0 +1,63 @@
+<%- include('partials/homeHeader') %>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section class="contactG">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <div class="contactG__Title">
+                    <h1>Contact the NBA</h1>
+                </div>
+                <form class="contact-form" method="POST" action="/contact">
+                <div class="form-group">
+                     <label for="fname">First Name</label>
+                    <input type="text" class="form-control" name="fname" id="fname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                   <input type="text" class="form-control" name="lname" id="lname" required>
+               </div>
+               <div class="form-group">
+                    <label for="email">Email Address</label>
+                   <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="select">Topic</label>
+                    <select name="select" id="select" class="custom-select" required>
+                        <option value="none">---</option>
+                      <option value="Business of NBA">Business of NBA</option>
+                      <option value="Buying NBA Game Tickets">Buying NBA Game Tickets</option>
+                      <option value="Contact Cybersecurity">Contact Cybersecurity</option>
+                      <option value="Contacting Teams and Players">Contacting Teams and Players</option>
+                      <option value="Experiencing the NBA - Games and Events">Experiencing the NBA - Games and Events</option>
+                      <option value="Improving NBA.com">Improving NBA.com</option>
+                      <option value="NBA Cares / The NBA in the Community">NBA Cares / The NBA in the Community</option>
+                      <option value="NBA Gear and Products">NBA Gear and Products</option>
+                      <option value="NBA International">NBA International</option>
+                      <option value="Officating in THE NBA">Officating in the NBA</option>
+                      <option value="Playing for the NBA">Playing for the NBA</option>
+                      <option value="Watching THE NBA on TV">Watching THE NBA on TV</option>
+                      <option value="Working for the NBA">Working for the NBA</option>
+                      <option value="General Comments / Suggestions">General Comments / Suggestions</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                   <textarea class="form-control" id="message" name="message" required></textarea>
+                   
+                   <button type="submit" class="nbabtn">Send</button>
+                </div>
+                  
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include('partials/footer') %>
