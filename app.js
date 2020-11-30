@@ -6,6 +6,7 @@ require('dotenv').config();
 // End Using Environment Variables to Keep Secret Safe like API address in app.js
 
 const express = require("express");
+const enforce = require('express-sslify')
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 
@@ -13,18 +14,13 @@ const ejs = require("ejs");
 ///Email note only
 const nodemailer = require("nodemailer");
 ///End Email note only
-
 const app = express();
-
-
-
-
-
-app.set('view engine', 'ejs');
-
+app.use(enforce.HTTPS({trustProtoHeader: true}));
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+app.set('view engine', 'ejs');
+
 app.use(express.static("public"));
 //TODO
 
