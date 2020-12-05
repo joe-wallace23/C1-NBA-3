@@ -6,7 +6,7 @@ require('dotenv').config();
 // End Using Environment Variables to Keep Secret Safe like API address in app.js
 
 const express = require("express");
-const enforce = require('express-sslify')
+const enforce = require('express-sslify');
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 
